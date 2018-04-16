@@ -1,0 +1,84 @@
+1. a=b+c*d-e/f@g;
+
+2. int x,y;
+y-=x;
+int z=(5+x);
+
+3. 	int a,b,c,d,e,f;
+a=5;
+b=5@4@2;
+a+=(d*e);
+d-=(b/(a%f));
+e*=e;
+f=c;
+f%=(d+e)*a;
+
+4.bool b=true;
+bool f=!(5<4);
+int x,y;
+int z=(x|y) & (x^y);
+bool t=(b || f) && !f;
+int k=~z;
+
+5. int x;
+unsigned int a=x; //Unsigned int cannot be assigned to int
+
+6.unsigned int p;
+unsigned int q;
+int x=p+q;
+
+7.if((5>=4) || (3<=2) || (8!=8) && (9==9)) ;
+
+8.int a,b;
+if(a<b)
+{
+   int x,y;
+   if(x<y)
+   {
+     a=a+1;
+     a*=b;
+   }
+   else
+   {
+     bool p=true;
+     if(p)
+     b/=10;
+   } 
+}
+else ;
+
+9. int a=5;
+while(a>0) a=a-1;
+
+10. int a,b;
+a=5;  
+b=3;
+while(a>0)
+{
+   a=a-1;
+   while(b>0)
+   {
+     a+=b;
+     b=b-1;
+   }
+}
+
+11. bool b=true;
+switch(b)
+{
+}
+
+12. int a,b;
+switch(a)
+{
+   case 0: ; break;
+   case 1: b=b+1; break;
+   case 2: int x;
+           switch(x)
+           {
+             case 10: ; break;
+             default: b=b-1;
+           }
+   default: b=b-1;
+}
+

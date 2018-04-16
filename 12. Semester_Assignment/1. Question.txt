@@ -1,0 +1,33 @@
+PROBLEM DESCRIPTION
+This project aims to generate the three-address Code for a given input, that is recognised using lex as the Lexical Analyser and parsed using yacc (the Parser Generator), while simultaneously performing syntax and semantic analysis. 
+The input is essentially a Sub-C language – a subset of the C language, originally developed by Dennis Ritchie.
+The Sub-C language for which this project generates 3-address code comprises the following constructs:
+
+DATATYPES: 
+Integer (int)
+Unsigned Integer(uint)
+Boolean (bool)
+OPERATORS:
+Assignment: 	=, +=, -=, *=, /=
+Arithmetic: 		+,  -,  *,  /,  %,  @(Exponentiation)
+Bitwise: 		&,  |,  ~,  ^(Exclusive OR )
+Logical: 		&&,  ||,  !
+Relational: 		==,  !=,   <,  <=,  >,  >=
+
+KEYWORDS:
+
+CONDITIONAL CONSTRUCTS:
+ IF 
+ELSE
+SWITCH
+BREAK
+CASE
+DEFAULT
+
+LOOPING CONSTRUCTS:
+WHILE
+
+OTHER TOKENS:       { ,  },  (,  ),  :,  ;
+IDENTIFIERS: [A-Za-z]+
+NUMERALS: [0-9]+
+BOOLEAN LITERALS:  true, false

@@ -1,0 +1,194 @@
+1. Assign a 4 bytes
+Assign b 4 bytes
+Assign c 4 bytes
+Assign d 4 bytes
+Assign e 4 bytes
+Assign f 4 bytes
+Assign g 4 bytes
+t1 = c * d
+t2 = b + t1
+t3 = f @ g
+t4 = e / t3
+t5 = t2 - t4
+a = t5
+
+2.Assign x 4 bytes
+Assign y 4 bytes
+y = y - x
+Assign z 4 bytes
+t1 = 5 + x
+z=t1
+
+3. Assign a 4 bytes
+Assign b 4 bytes
+Assign c 4 bytes
+Assign d 4 bytes
+Assign e 4 bytes
+Assign f 4 bytes
+a = 5
+t1 = 4 @ 2
+t2 = 5 @ t1
+b = t2
+t3 = d * e
+a = a + t3
+t4 = a %s
+t5 = b / t4
+d = d - t5
+e = e * e
+f = c
+t6 = d + e
+t7 = t6 * a
+f = f % t7
+
+4.Assign b 1 byte
+b=true
+Assign f 1 byte
+t1 = 5 < 4
+t2 = !t1
+f=t2
+Assign x 4 bytes
+Assign y 4 bytes
+Assign z 4 bytes
+t3 = x | y
+t4 = x ^ y
+t5 = t3 & t4
+z=t5
+Assign t 1 byte
+t6 = b || f
+t7 = !f
+t8 = t6 && t7
+t=t8
+Assign k 4 bytes
+t9 = ~z
+k=t9
+
+5. ERROR! Incompatible types
+
+6. Assign p 4 bytes
+Assign q 4 bytes
+Assign x 4 bytes
+t1 = p + q
+x=t1
+
+7.t1 = 5 >= 4
+t2 = 3 <= 2
+t3 = t1 || t2
+t4 = 8 != 8
+t5 = 9 == 9
+t6 = t4 && t5
+t7 = t3 || t6
+if t7 ==false goto L1
+{
+}
+L1:
+
+8. Assign a 4 bytes
+Assign b 4 bytes
+t1 = a < b
+if t1 ==false goto L4
+{
+Assign x 4 bytes
+Assign y 4 bytes
+t2 = x < y
+if t2 ==false goto L2
+{
+t3 = a + 1
+a = t3
+a = a * b
+}
+goto L3
+L2:
+{
+Assign p 1 byte
+p=true
+pif p ==false goto L1
+{
+b = b / 10
+}
+L1:
+}
+L3:
+}
+goto L5
+L4:
+{
+}
+L5:
+
+
+9.Assign a 4 bytes
+a=5
+L1:
+t1 = a > 0
+if t1 ==false goto L2
+{
+t2 = a - 1
+a = t2
+goto L1
+}
+L2:
+
+
+10.Assign a 4 bytes
+Assign b 4 bytes
+a = 5
+b = 3
+L3:
+t1 = a > 0
+if t1 ==false goto L4
+{
+t2 = a - 1
+a = t2
+L1:
+t3 = b > 0
+if t3 ==false goto L2
+{
+a = a + b
+t4 = b - 1
+b = t4
+goto L1
+}
+L2:
+goto L3
+}
+L4:
+
+
+11.Assign b 1 byte
+b=true
+Syntax Error!
+
+
+12.Assign a 4 bytes
+Assign b 4 bytes
+a
+switch a
+{
+if not equal to 0 goto L6
+goto L3
+L6
+if not equal to 1 goto L5
+t1 = b + 1
+b = t1
+goto L3
+L5
+if not equal to 2 goto L4
+Assign x 4 bytes
+x
+switch x
+{
+if not equal to 10 goto L2
+goto L1
+L2
+t2 = b - 1
+b = t2
+goto L1
+}
+L1:
+goto L3
+L4
+t3 = b - 1
+b = t3
+goto L3
+}
+L3:
